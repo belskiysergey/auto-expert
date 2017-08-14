@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content = "" />
+        <title>Автоэксперт</title>
+        <!-- Подключение иконки -->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <!-- Стили слайдера -->
+        <link rel="stylesheet" href="vendors/slider/jlider/jlider.css" />
+        <!-- Основные стили сайта -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Подключение jQuery -->
+        <script src="vendors/jquery.min.js"></script>
+        <!-- Подключение скрипта слайдера -->
+        <script src="vendors/slider/jlider/jlider.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#jl2").jliderSlide({
+                    slideEffect  : "random",
+                    visiTime     : 6000,
+                    autoPlay     : false,
+                    // width        : "820px",
+                    // height       : "420px",
+                    photoCaption : true,
+                    visiProgress : true,
+                    noCopy       : true,
+                    hideControl  : "hover",
+                    navType      : "line",
+                    Loaded       : function (curSlide) {
+                                        console.log('Loaded...!');
+                                    },
+                    pressPlay    : function (curSlide) {
+                                        console.log('Pressed Play button...!');
+                                    },
+                    pressPause   : function (curSlide) {
+                                        console.log('Pressed Pause button...!');
+                                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            (function(w, d, n, s, t) {
+                w[n] = w[n] || [];
+                w[n].push(function() {
+                    Ya.Direct.insertInto(84098, "yandex_ad", {
+                        ad_format: "direct",
+                        type: "240x400",
+                        border_type: "block",
+                        border_radius: true,
+                        site_bg_color: "FFFFFF",
+                        header_bg_color: "FEEAC7",
+                        bg_color: "FFF9F0",
+                        border_color: "FBE5C0",
+                        title_color: "0000CC",
+                        url_color: "006600",
+                        text_color: "000000",
+                        hover_color: "0066FF",
+                        favicon: true,
+                        no_sitelinks: false
+                    });
+                });
+                t = d.getElementsByTagName("script")[0];
+                s = d.createElement("script");
+                s.src = "//an.yandex.ru/system/context.js";
+                s.type = "text/javascript";
+                s.async = true;
+                t.parentNode.insertBefore(s, t);
+            })(window, document, "yandex_context_callbacks");
+        </script>
+    </head>
+    <body>
+        <menu>
+            <div class="clearfix wrapp_menu">
+                <img src="images/logo.png" alt="Автоэксперт" class="logo">
+                <ul>
+                    <li><a href="#about_us">О нас</a></li>
+                    <li><a href="#comprehensive_examination">Комплексный осмотр</a></li>
+                    <li><a href="#block_price">Цены</a></li>
+                    <li><a href="#question">Задать вопрос</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </menu>
+        <header id="about_us">
+            <div class="header_caption clearfix">
+                <div class="header_caption_left">
+                    <h1>Помощь при покупке автомобиля</h1>
+                    <div>У нас есть опыт, который вам пригодится</div>
+                </div>
+                <div class="header_caption_right">
+                    <div class="number">+38(063) 129-68-05</div>
+                    <div class="number">+38(097) 561-29-13</div>
+                    <div class="request_call">
+                        <ul>
+                            <li><a href="#modal_req_call">Заказать звонок</a></li>
+                            <li class="triangle"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="comprehensive_examination" class="comprehensive_examination">
+            <div class="wrapp_block">
+                <h2>Комплексный осмотр</h2>
+                <div>Комплексный осмотр авто с выездом специалиста к продавцу включает в себя:</div>
+                <div class="wrapp_services clearfix">
+                    <div class="services">
+                        <img src="images/3dc520bb19.jpg" alt="Надёжность" class="icon">
+                        <h3>Осмотр кузова</h3>
+                        <p>Визуальная проверка на наличие рихтованых,  крашеных, ржавых частей, установки неоригинальных кузовных деталей и общего лакокрасочного покрытия</p>
+                    </div>
+                    <div class="services">
+                        <img src="images/9d1724e460.jpg" alt="Быстрая оптимизация" class="icon">
+                        <h3>Компьютерная диагностика</h3>
+                        <p>Компьютерная диагностика всех систем автомобиля, выявление неисправностей</p>
+                    </div>
+                    <div class="services">
+                        <img src="images/ecdee105bb.jpg" alt="Доступность" class="icon">
+                        <h3>Обоснованный торг</h3>
+                        <p>Обоснованый торг с продавцом, который поможет вам сэкономить неплохую сумму</p>
+                    </div>
+                    <div class="services">
+                        <img src="images/542a155040.jpg" alt="Оценка салона" class="icon">
+                        <h3>Осмотр салона</h3>
+                        <p>Наш мастер не пропустит ни одной мелочи автомобиля</p>
+                    </div>
+                    <div class="services">
+                        <img src="images/d93580331c.jpg" alt="Возможность интерации" class="icon">
+                        <h3>Диагностика</h3>
+                        <p>Диагностика двигателя, коробки передач, рулевой и ходовой части</p>
+                    </div>
+                    <div class="services">
+                        <img src="images/7099faed23.jpg" alt="Проверка мощности" class="icon">
+                        <h3>Осмотр всех электросистем</h3>
+                        <p>Это очень важная часть и лучше поручить её профессионалам автомобиля</p>
+                    </div>
+                </div>
+        </section>
+        <section id="guarantee" class="guarantee">
+            <div class="wrapp_guarantee">
+                <h2>Гарантия успеха</h2>
+                <div>Никто не хочет быть жертвой обмана недобросовестнных продавцов Б/У автомобилей.</div>
+                <p>Перед тратой немалых финансов, нужно семь раз отмерить, а уж потом соглашатъся на сделку. Мы Вам предлагаем свои услуги, благодаря которым Вы экономите время, нервы и деньги, а по итогу становитесь обладателем хорошего, надежного и технически исправного автомобиля мечты.</p>
+            </div>
+        </section>
+        <section id="block_price" class="block_price">
+            <table>
+                <caption>Сколько стоит?</caption>
+                <thead>
+                    <tr>
+                        <td>Вид услуги</td>
+                        <td>Стоимость (грн)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Осмотр у нас в гараже</td>
+                        <td>200</td>
+                        <td>
+                            <div class="btn_order order_an_inspection_in_our_garage" id="#modal_order_an_inspection_in_our_garage">Заказать</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Осмотр с выездом мастера</td>
+                        <td>400</td>
+                        <td>
+                            <div class="btn_order order_an_inspection_with_departure" id="#modal_order_an_inspection_with_departure">Заказать</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Обоснованный торг</td>
+                        <td>*</td>
+                        <td>
+                            <div class="btn_order order_justified_bargaining" id="#modal_order_justified_bargaining">Заказать</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="question" class="question">
+            <h2>Остались вопросы?</h2>
+            <div>Заполните форму контактов и мы свяжемся с вами, и ответим на все ваши вопросы</div>
+            <a id="#modal_question" class="btn_question">Задать вопрос</a>
+        </section>
+        <section class="our_clients" id="reviews">
+            <h2>Машины которые мы выбирали</h2>
+            <ul class="jlider" id="jl2">
+                <li><img src="images/4.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 1"/></li>
+                <li><img src="images/6922798-mercedes-benz-white.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 2"/></li>
+                <li><img src="images/dodge_mosch.jpg" data-href="#" alt="Подпись для изображения"title="Image Title 3"/></li>
+                <li><img src="images/labmo.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 4"/></li>
+                <li><img src="images/6922798-mercedes-benz-white.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 5"/></li>
+                <li><img src="images/dodge_mosch.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 6"/></li>
+                <li><img src="images/labmo.jpg" data-href="#" alt="Подпись для изображения" title="Image Title 7"/></li>
+            </ul>
+        </section>
+        <section id="contacts" class="clearfix callback">
+            <div class="clearfix wr_callback">
+                <div class="bl_left">
+                    <div class="clearfix">
+                        <img src="images/phone.png" alt="Обратная звязь" class="img_phone">
+                        <div class="phones">
+                            <div>+38(063) 129-68-05</div>
+                            <div>+38(097) 561-29-13</div>
+                        </div>
+                    </div>
+                    <div class="bl_left_text">Закажите обратный звонок<br>прямо сейчас</div>
+                </div>
+                <div class="bl_right">
+                    <a id="#modal_request_call" class="request_call">Заказать звонок</a>
+                    <div class="bl_right_text">Мы перезвоним и ответим<br>на ваши вопросы в любое<br>удобное для вас время</div>
+                </div>
+        </section>
+        <footer>Политика конфиденциальности</footer>
+
+
+        <!-- Модальное окно - заказать звонок -->
+
+        <div id="modal_request_call">
+            <span id="modal_close">X</span>
+            <form class="contact_form" action="/send_request-call.php" method="post" id="form">
+                <ul>
+                    <li>
+                        <label for="name">Ваше имя (отчество):</label>
+                        <input type="text" name="name" placeholder="Иван Васильевич" required />
+                    </li>
+                    <li>
+                        <label for="number">Номер телефона:</label>
+                        <input type="text" name="number" placeholder="+380123456789" required />
+                        <p class="">Мы свяжемся с Вами в ближайшее время!</p>
+                    </li>
+                </ul>
+                <button class="reset" type="reset">Очистить данные</button>
+                <button class="submit" type="submit" id="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="overlay"></div> <!-- подложка -->
+
+
+        <!-- Модальное окно - задать вопрос -->
+
+        <div id="modal_question">
+            <span id="modal_close">X</span>
+            <form class="contact_form" action="/send_question.php" method="post" data="form_data" id="form">
+                <ul>
+                    <li>
+                        <label for="name">Ваше имя (отчество):</label>
+                        <input type="text" name="name" placeholder="Иван Васильевич" required />
+                    </li>
+                    <li>
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" name="email" placeholder="ivan_vasilievich@gmail.com" required />
+                    </li>
+                    <li>
+                        <label for="number">Номер телефона:</label>
+                        <input type="text" name="number" placeholder="+380123456789" required />
+                    </li>
+                    <li>
+                        <label for="message">Опишите вопрос:</label>
+                        <textarea name="message" placeholder="Введите сообщение..." cols="40" rows="6" required ></textarea>
+                    </li>
+                </ul>
+                <button class="reset" type="reset">Очистить данные</button>
+                <button class="submit" type="submit" id="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="overlay"></div> <!-- подложка -->
+
+        
+        <!-- Модальное окно - "Заказать осмотр у нас в гараже" -->
+
+        <div id="modal_order_an_inspection_in_our_garage">
+            <span id="modal_close">X</span>
+            <form class="contact_form" action="/send_inspection-in-the-garage.php" method="post" id="form">
+                <ul>
+                    <li>
+                        <label for="name">Ваше имя (отчество):</label>
+                        <input type="text" name="name" placeholder="Иван Васильевич" required />
+                    </li>
+                    <li>
+                        <label for="number">Номер телефона:</label>
+                        <input type="text" name="number" placeholder="+380123456789" required />
+                    </li>
+                    <li>
+                        <label for="date">Когда Вас ждать:</label>
+                        <input type="date" name="date">
+                    </li>
+                    <li>
+                        <label for="time">В какое время:</label>
+                        <select size="1" name="time" required >
+                            <option>10:00 - 11:00</option>
+                            <option>11:00 - 12:00</option>
+                            <option>12:00 - 13:00</option>
+                            <option>13:00 - 14:00</option>
+                            <option>14:00 - 15:00</option>
+                            <option>15:00 - 16:00</option>
+                            <option>16:00 - 17:00</option>
+                            <option>17:00 - 18:00</option>
+                            <option>18:00 - 19:00</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="message">Дополнительная информация:</label>
+                        <textarea name="message" placeholder="Введите сообщение..." cols="40" rows="6" required ></textarea>
+                    </li>
+                </ul>
+                <button class="reset" type="reset">Очистить данные</button>
+                <button class="submit" type="submit" id="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="overlay"></div> <!-- подложка -->
+
+
+        <!-- Модальное окно - "Заказать осмотр с выездом мастера" -->
+
+        <div id="modal_order_an_inspection_with_departure">
+            <span id="modal_close">X</span>
+            <form class="contact_form" action="/send_departure-master.php" method="post" id="form">
+                <ul>
+                    <li>
+                        <label for="name">Ваше имя (отчество):</label>
+                        <input type="text" name="name" placeholder="Иван Васильевич" required />
+                    </li>
+                    <li>
+                        <label for="number">Номер телефона:</label>
+                        <input type="text" name="number" placeholder="+380123456789" required />
+                    </li>
+                    <li>
+                        <label for="date">Дата встречи:</label>
+                        <input type="date" name="date">
+                    </li>
+                    <li>
+                        <label for="time">В какое время:</label>
+                        <select size="1" name="time" required >
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="address">Адрес встречи:</label>
+                        <input type="text" name="address" placeholder="ул. Пушкина, 10" required />
+                    </li>
+                    <li>
+                        <label for="message">Дополнительная информация:</label>
+                        <textarea name="message" placeholder="Введите сообщение..." cols="40" rows="6" required ></textarea>
+                    </li>
+                </ul>
+                <button class="reset" type="reset">Очистить данные</button>
+                <button class="submit" type="submit" id="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="overlay"></div> <!-- подложка -->
+
+
+        <!-- Модальное окно - "Заказать обоснованый торг" -->
+       
+        <div id="modal_order_justified_bargaining" class="modal_window">
+            <span id="modal_close">X</span>
+            <form class="contact_form" action="/send_reasonable-bargaining.php" method="post" id="form">
+                <ul>
+                    <li>
+                        <label for="name">Ваше имя (отчество):</label>
+                        <input type="text" name="name" placeholder="Иван Васильевич" required />
+                    </li>
+                    <li>
+                        <label for="number">Номер телефона:</label>
+                        <input type="text" name="number" placeholder="+380123456789" required />
+                    </li>
+                    <li>
+                        <label for="date">Дата встречи:</label>
+                        <input type="date" name="date">
+                    </li> 
+                    <li>
+                        <label for="time">В какое время:</label>
+                        <select size="1" name="time" required >
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="date">Адрес встречи:</label>
+                        <input type="text" name="address" placeholder="ул. Пушкина, 10" required />
+                    </li>
+                    <li>
+                        <label for="message">Дополнительная информация:</label>
+                        <textarea name="message" placeholder="Введите сообщение..." cols="40" rows="6" required ></textarea>
+                    </li>
+                </ul>
+                <button class="reset" type="reset">Очистить данные</button>
+                <button class="submit" type="submit" id="submit">Отправить</button>
+            </form>
+        </div>
+        <div id="overlay"></div> <!-- подложка -->
+        
+
+
+        <!-- Скрипт плавной прокрутки для меню сайта -->
+        <script src="vendors/smoothscroll.js"></script>
+        <!-- Скрипт модального окна -->
+        <script src="vendors/modal.js"></script>
+        <!-- Скрипт ajax-запроса -->
+        <script src="vendors/ajax.js"></script>
+
+    </body>
+</html>
